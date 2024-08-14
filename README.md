@@ -13,41 +13,41 @@ In this project, I’ve created a basic shell script that shows a digital clock 
 - **Operating System**: CentOS 9 (or any Linux distribution with Bash)
 - **Bash Shell**: Installed by default on most Linux systems
 
-## Installation & Usage 🚀
-1. **Clone the Repository:**
-git clone https://github.com/siddharthpatil-0411/digital-watch.git
+## Installation & Usage 🚀 <br/>
+1. **Clone the Repository:** <br/>
+git clone https://github.com/siddharthpatil-0411/digital-watch.git <br/>
 
-**Create a Directory:**
-mkdir digital-watch
+**Create a Directory:** <br/>
+mkdir digital-watch <br/>
 
-**Navigate to the Project Directory:**
-cd digital-watch
+**Navigate to the Project Directory:** <br/>
+cd digital-watch <br/>
 
-**Run the Script:**
-./digital-watch.sh
+**Run the Script:** <br/>
+./digital-watch.sh <br/>
 
-**If the script doesn't have execution permissions, you can add them using:**
-chmod +x digital-watch.sh
+**If the script doesn't have execution permissions, you can add them using:** <br/>
+chmod +x digital-watch.sh <br/>
 
-**Script Details 🛠️
-Here's the complete script for the digital watch:**
+**Script Details 🛠️ <br/>
+Here's the complete script for the digital watch:** <br/>
 
-#!/bin/bash
-Red=$'\e[1;31m'
-Green=$'\e[1;32m'
-Blue=$'\e[1;34m'
+#!/bin/bash <br/>
+Red=$'\e[1;31m' <br/>
+Green=$'\e[1;32m' <br/>
+Blue=$'\e[1;34m' <br/>
 
-while true
-do 
-       clear
-       echo $Red $(date +%T)
-       sleep 1s
-done
+while true <br/>
+do <br/>
+       clear <br/>
+       echo $Red $(date +%T) <br/>
+       sleep 1s <br/>
+done <br/>
 
-**How It Works 🧩**
-**Red=$'\e[1;31m'**: This sets the color for the time display to red.
-**while true loop:** The script continuously runs, updating the time every second.
-**clear:** Clears the terminal screen before displaying the updated time.
-**date +%T:** Displays the current time in HH:MM
-format.
-**sleep 1s:** Pauses the script for 1 second before the next update.
+**How It Works 🧩** <br/>
+**Red=$'\e[1;31m'**: This sets the color for the time display to red. <br/>
+**while true loop:** The script continuously runs, updating the time every second. <br/>
+**clear:** Clears the terminal screen before displaying the updated time. <br/>
+**date +%T:** Displays the current time in HH:MM <br/>
+format. <br/>
+**sleep 1s:** Pauses the script for 1 second before the next update. <br/>

@@ -1,22 +1,53 @@
-# Digital Watch Script on CentOS 9
-👋 Hey there! I'm SIDDHARTH PATIL, a DevOps learner focusing on Linux and cloud computing. This is my first project on CentOS 9, where I created a simple digital watch script using basic shell scripting.
+# Digital Watch Script on CentOS 9 🕒
+👋 Hi, I'm **SIDDHARTH PATIL**, a DevOps enthusiast diving into the world of Linux and cloud computing. This is my first Linux project, where I've created a simple yet effective digital watch script using shell scripting on CentOS 9.
 
-## Project Overview
-This project provides a simple digital watch displayed in the terminal using shell scripting on CentOS 9. The script updates the current time every second and displays it in different colors.
+## Project Overview 📜
+In this project, I’ve created a basic shell script that shows a digital clock in the terminal. The time updates every second, and you can change the display color.
 
-## Features
-- Displays the current time in the terminal.
-- Updates every second.
-- Uses different colors for time display.
+## Features ✨
+**Real-time Clock:** Shows the current time with hours, minutes, and seconds.
+**Colorful Display:** The time appears in red for a nice visual effect.
+**Simple and Lightweight:** Requires minimal code and resources.
 
-## Requirements
-- CentOS 9
-- Bash shell
+## Prerequisites 📋
+- **Operating System**: CentOS 9 (or any Linux distribution with Bash)
+- **Bash Shell**: Installed by default on most Linux systems
 
-## Installation
-1.If Git isn't installed, you can install it using:
-sudo dnf install git
+## Installation & Usage 🚀
+1. **Clone the Repository:**
+git clone https://github.com/siddharthpatil-0411/digital-watch.git
 
-2. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-repository-name.git
+**Create a Directory:**
+mkdir digital-watch
+
+**Navigate to the Project Directory:**
+cd digital-watch
+
+**Run the Script:**
+./digital-watch.sh
+
+**If the script doesn't have execution permissions, you can add them using:**
+chmod +x digital-watch.sh
+
+**Script Details 🛠️
+Here's the complete script for the digital watch:**
+
+#!/bin/bash
+Red=$'\e[1;31m'
+Green=$'\e[1;32m'
+Blue=$'\e[1;34m'
+
+while true
+do 
+       clear
+       echo $Red $(date +%T)
+       sleep 1s
+done
+
+**How It Works 🧩**
+**Red=$'\e[1;31m'**: This sets the color for the time display to red.
+**while true loop:** The script continuously runs, updating the time every second.
+**clear:** Clears the terminal screen before displaying the updated time.
+**date +%T:** Displays the current time in HH:MM
+format.
+**sleep 1s:** Pauses the script for 1 second before the next update.

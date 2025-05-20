@@ -1,4 +1,4 @@
-# Digital Watch Script on CentOS 9 🕒
+# Digital Watch Script on CentOS 99999999 🕒
 👋 Hi, I'm **SIDDHARTH PATIL**, a DevOps enthusiast diving into the world of Linux and cloud computing. This is my first Linux project, where I've created a simple yet effective digital watch script using shell scripting on CentOS 9.
 
 ## Project Overview 📜
